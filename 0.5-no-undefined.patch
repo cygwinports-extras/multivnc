@@ -1,0 +1,12 @@
+--- origsrc/multivnc/configure.ac	2011-10-27 22:24:01.000000000 -0500
++++ src/multivnc/configure.ac	2011-10-27 22:52:38.951266700 -0500
+@@ -100,7 +100,8 @@ WX_RESCOMP="`$WXCONFIG --rescomp`"
+ dnl add some extra includes needed by src/gui/VNCSeamlessConnector
+ if test ! -z "`$WXCONFIG --selected-config | grep "gtk2" 2>/dev/null`"; then
+     PKG_CHECK_MODULES(GTK, gtk+-2.0)  
+-    WX_CXXFLAGS+=" `pkg-config --cflags gtk+-2.0`"
++    WX_CXXFLAGS+=" $GTK_CFLAGS"
++    WX_LIBS+=" $GTK_LIBS"
+ fi
+ 
+  

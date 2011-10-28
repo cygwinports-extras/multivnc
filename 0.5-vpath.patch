@@ -1,0 +1,11 @@
+--- origsrc/multivnc/src/gui/Makefile.am	2011-10-27 22:24:01.000000000 -0500
++++ src/multivnc/src/gui/Makefile.am	2011-10-27 22:24:07.590796800 -0500
+@@ -33,7 +33,7 @@ libMultiVNCgui_a_SOURCES = \
+ 	res/vnccursor.xbm
+ 
+ 
+-libMultiVNCgui_a_CPPFLAGS  = @WX_CPPFLAGS@ @GTK_CFLAGS@ -I..
++libMultiVNCgui_a_CPPFLAGS  = @WX_CPPFLAGS@ @GTK_CFLAGS@ -I$(top_srcdir)/src
+ 
+ EXTRA_DIST = \
+ 	res/about.png \
