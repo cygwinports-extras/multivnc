@@ -1,6 +1,0 @@
-category: Net X11
-requires: libgcc1 libgcrypt11 libglib2.0_0 libgnutls26 libgtk2.0_0 libjpeg8 libstdc++6 libwx_baseu2.8_0 libwx_gtk2u2.8_0 zlib0
-sdesc: "GTK+ multicast VNC viewer"
-ldesc: "MultiVNC is a cross-platform Multicast-enabled VNC viewer using 
-wxWidgets and libvncclient. Features include support for most encodings, 
-ZeroConf service discovery and a seamless edge control mode á la x2vnc."

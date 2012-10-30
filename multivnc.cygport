@@ -1,0 +1,17 @@
+WX_VERSION=2.8
+GIT_URI="git://multivnc.git.sourceforge.net/gitroot/multivnc/multivnc"
+GIT_TAG="MultiVNC-${PV}"
+inherit wxwidgets git
+
+NAME="multivnc"
+VERSION=0.5
+RELEASE=2
+CATEGORY="Net"
+SUMMARY="GTK+ multicast VNC viewer"
+DESCRIPTION="MultiVNC is a cross-platform Multicast-enabled VNC viewer using
+wxWidgets and libvncclient. Features include support for most encodings,
+ZeroConf service discovery and a seamless edge control mode á la x2vnc."
+HOMEPAGE="http://multivnc.sourceforge.net/"
+#SRC_URI="mirror://sourceforge/multivnc/${P}.tar.gz"
+PATCH_URI="0.5-no-undefined.patch
+	   0.5-vpath.patch"
