@@ -1,0 +1,14 @@
+wxServDisc/mdnsd.c: In function ‘mdnsd_out’:
+wxServDisc/mdnsd.c:469:5: error: implicit declaration of function 'htons'
+wxServDisc/mdnsd.c:470:5: error: implicit declaration of function 'inet_addr'
+
+--- origsrc/multivnc/src/wxServDisc/mdnsd.c	2013-11-09 21:56:28.000000000 -0600
++++ src/multivnc/src/wxServDisc/mdnsd.c	2013-11-09 22:11:20.900150200 -0600
+@@ -1,6 +1,7 @@
+ #include "mdnsd.h"
+ #include <string.h>
+ #include <stdlib.h>
++#include <arpa/inet.h>
+ 
+ #define bzero(b,len) (memset((b), '\0', (len)), (void) 0)
+ 
